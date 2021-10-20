@@ -1,0 +1,287 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+.my-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  background: url("../img/bg.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.place-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  width: 33%;
+  height: 100%;
+  max-width: 33%;
+}
+
+.closing-viewer {
+  display: flex;
+}
+
+.place {
+  width: 100%;
+  margin-top: 170%;
+}
+
+.place.second {
+  padding-top: 30%;
+}
+
+.place.third {
+  padding-top: 45%;
+}
+
+.place.first.in, .place.second.in, .place.third.in {
+  margin-top: 0;
+  animation-duration: 20s;
+  animation-name: animatetop;
+}
+
+@keyframes animatetop {
+  from {margin-top: 170%;}
+  to {margin-top: 0;}
+}
+
+.place-viewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.place-viewer__team {
+  width: 44%;
+}
+
+.my-button{
+  background-color: #000068;
+  border: 2px solid #000068;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 0.25vw;
+  cursor: pointer;
+}
+.my-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.my-button--toolbar {
+  font-size: 3vmin;
+  padding: 0.7vmin 1.4vmin;
+  background-color: transparent;
+  min-width: 7vh;
+}
+
+.controls-container {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0%;
+  left: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.winners-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  user-select: none;
+  background: white;
+}
+
+.header-container {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5vh;
+  font-family: DINPro, serif;
+  font-weight: bold;
+  color: #050e8a;
+}
+
+.head-text {
+  display: flex;
+  width: 137%;
+  align-items: center;
+  justify-content: center;
+  height: 70%;
+  align-self: flex-end;
+  line-height: 5vh;
+}
+
+.winner-container {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.teams-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.team {
+  width: 10%;
+  height: 25%;
+  background: white;
+  margin: 0.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vh;
+  box-shadow: 3px 3px 1px 0 #0000007a;
+  font-family: DINPro, serif;
+  font-size: 1.8vh;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.6vh;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 1%;
+  height: 90%;
+  box-shadow: 3px 3px 1px 0 #0000007a;
+}
+
+.group-name {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  color: white;
+  background: linear-gradient(135deg, rgb(243, 43, 3) 0%, rgb(193, 27, 44) 37%, rgb(182, 45, 64) 72%, rgb(233, 49, 28) 100%);
+  border-radius: 0.5vh 0.5vh 0 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  height: 90%;
+  border: 1px dotted black;
+  background: linear-gradient(45deg, #87e0fd 0%,#53cbf1 28%,#05abe0 87%);
+}
+
+#place2 {
+  height: 80%;
+}
+
+
+#place3 {
+  height: 70%;
+}
+
+.team-place {
+  height: 96%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vh;
+  box-shadow: 3px 3px 1px 0 #0000007a;
+  font-family: DINPro, serif;
+  font-size: 3vh;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  background: #fff;
+  color: #a11c0e;
+  line-height: 3vh;
+}
+
+.team-place__image {
+  width: 100%;
+  height: 70%;
+  margin-top: 5%;
+}
+
+.team-place__name {
+  height: 25%;
+}
+
+.team-place__close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: -89%;
+  right: -46%;
+  color: #000000;
+  font-size: 4vmin;
+  font-family: DINpro, serif;
+}
+
+.team-place__close-btn:hover {
+  color: #ee2111;
+}
+
+.team-place__close-btn:focus {
+  outline: 0;
+}
+
+.drop {
+}
+
+.drop.highlight {
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.my-hide {
+  opacity: 0;
+  cursor: default;
+}
+
+.my-button:focus {
+  outline: 0;
+}
